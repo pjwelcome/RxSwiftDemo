@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RxSwiftWatch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="0CM-8h-cIt">
+                            <items>
+                                <tableRow identifier="row" id="0aO-x2-L17" customClass="Row" customModule="RxSwiftWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="NZV-8q-ynG">
+                                        <items>
+                                            <label width="128" height="41" alignment="left" text="Label" id="h8z-NX-bWx"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="h8z-NX-bWx" id="S8l-K1-e1r"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Button" id="tnQ-gx-GLU">
+                            <connections>
+                                <action selector="sendMessage" destination="AgC-eL-Hgc" id="oZI-64-2Tp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="0CM-8h-cIt" id="gHe-ob-NHa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="76.869565217391298" y="156.33928571428572"/>
+        </scene>
+    </scenes>
+</document>

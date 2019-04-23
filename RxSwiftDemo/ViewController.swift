@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchbar: UISearchBar!
     
     var viewBinding = ViewBinding ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewBinding.bind(on: self.searchbar)

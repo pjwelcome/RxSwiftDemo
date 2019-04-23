@@ -15,6 +15,7 @@ class ViewModel {
     var results : PublishSubject<[String]> = PublishSubject<[String]>()
     
     func retrieveStuff() {
+        
         results.onNext(["Peter","John", "Welcome", "Cocoaheads"])
     }
 }
